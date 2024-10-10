@@ -11,8 +11,9 @@ const altura = 1.80;
 let imc; 
 let anoNasci;
 imc = peso / (altura * altura);
-anoNasci = 2024 - idade;
 // imc = peso / (altura * altura)
+anoNasci = 2024 - idade;
+// ano de nascimento = ano atual - idade
 
-console.log(nome, sobrenome, 'possui', peso, 'kg e', altura, 'de altura,', 'seu imc corporal é =', imc)
-console.log(nome, sobrenome, 'nasceu em', anoNasci)
+console.log(`${nome} ${sobrenome} tem ${idade}, pesa ${peso} e tem ${altura} metros, seu IMC é igual a ${imc}.`)
+console.log(`${nome} ${sobrenome} nasceu em ${anoNasci}.`);
