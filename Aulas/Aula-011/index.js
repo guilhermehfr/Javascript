@@ -1,6 +1,6 @@
 let nom1 = 10;
 let nom2 = 5.6912121212121212;
-nom1 = nom1.toString();
+nom1 = nom1.toString(nom1);
 
 // Descobrir o tipo das variáveis
 console.log(typeof(nom1), typeof(nom2));
