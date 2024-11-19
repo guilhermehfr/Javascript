@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 2rem;
-            overflow: hidden;
             background-color: #475569;
             width: 100vw;
             height: 100vh;
         }
+        div {
+            line-height: 15px;
+        }
         fieldset {
+            padding: 2rem;
             border-radius: 1rem;
             border-style: none;
             background-color: white;
@@ -23,9 +31,6 @@
         form {
             display: flex;
             flex-direction: column;
-        }
-        form:last-child {
-            margin-bottom: 10px;
         }
         input {
             max-width: 50vw;
@@ -40,22 +45,30 @@
             font-size: 2rem;
             height: 5rem;
             margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .resultado {
+            font-size: 2rem;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
     <fieldset>
-        <form action="" method="get">
+        <form id="form" action="" method="get">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome">
-            <label for="idade">Idade:</label>
-            <input type="text" id="idade" name="idade">
+            <label for="sobrenome">sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome">
             <label for="peso">Peso:</label>
             <input type="text" id="peso" name="peso">
             <label for="altura">Altura:</label>
             <input type="text" id="altura" name="altura">
             <button type="submit">Enviar</button>
         </form>
+        <div id="resultado">
+        </div>
     </fieldset>
+    <script src="script.js"></script>
 </body>
 </html>
