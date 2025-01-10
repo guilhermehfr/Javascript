@@ -1,0 +1,70 @@
+:root {
+    --pcolor: rgb(25, 117, 138);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--pcolor);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+    padding: 2rem;
+    background-color: white;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+ h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+ }
+.dados p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.calc input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+
+}
+button {
+    width: 100%;
+    background-color: var(--pcolor);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+button:active {
+    background-color: rgb(14, 49, 82);
+}
+
+#result {
+    background-color: aquamarine;
+    
+}
