@@ -65,6 +65,5 @@ button:active {
 }
 
 #result {
-    background-color: aquamarine;
-    
+    background: aquamarine; 
 }
