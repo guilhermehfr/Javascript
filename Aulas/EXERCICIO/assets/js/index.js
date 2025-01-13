@@ -1,3 +1,8 @@
-const result = document.querySelector("#result");
-const peso = document.querySelector("#peso");
-const altura = document.querySelector("#altura");
+function calc() {
+    let result = document.getElementById('result');
+    let peso = parseFloat(document.getElementById('pesos').value);
+    let altura = parseFloat(document.getElementById('alturas').value);
+    let resultado;
+}
+
+a
